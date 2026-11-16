@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+/*Imports Pixelify font from Google Fonts, available for use
+in the page*/
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*This applies to following styles to all elements
+simulated-elements, sets box-sizing property to inherit
+ensures consistent box model behaviour to all elements*/
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+/*Styles apply to the html element*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Pixelify Sans';
+    background-color: #EBC4BF;
+    text-align: center;
+}
+
+/*Styles apply to the body element*/
+
+h1 {
+    font-size: 150px;
+    line-height: 1;
+    margin: 32px 0 0 0;
+    color: black;
+}
+
+/*Styles apply to the h1 (heading 1) element*/
+
+h2 {
+    font-size: 48px;
+    color: black;
+    margin: 32px;
+}
+
+/*Styles apply to the h2 (heading 2) element*/
+
+.score {
+    background-color: #2F0E12;
+    padding: 0 30px;
+    line-height: 1;
+    border-radius: 10px;
+    color: #EBC4BF
+}
+
+/*Styles apply to elements with class ".score"*/
+
+.game {
+    border: 5px solid #AE7467;
+    background-color: #2F0E12;
+
+    width: 600px;
+    height: 400px;
+    
+    display: flex;  /*modern flexbox*/
+    flex-wrap: wrap;  /* allows wrapping of child elements*/
+    justify-content: center;  /*horizontal alignment*/
+    align-items: center;  /*vertical alignment*/
+    margin: 0 auto;
+}
+
+/*Styles apply to elements with class ".game"*/
+
+.hole {
+    background: url('images/Hole1.png') center bottom / 80% auto no-repeat;
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+    height: 150px;
+    min-height: 150px;
+}
+
+/*Styles apply to elements with class ".hole"*/
+
+.hole:after {
+    display: block;
+    background: url('images/Hole1.png') center bottom / 80% auto no-repeat;
+    content: '';
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+}
+
+.mole {
+    background: url('images/David.png') bottom center no-repeat;
+    background-size: 70%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+/*Styles apply to elements with class ".mole"*/
+
+.hole.up .mole {
+    top: 0;
+}
+
+/*Style applied to mole elements within holes 
+that have the class "up". This indicates 
+the mole is in the "up" state*/
+
+#start {
+    font-family: 'Pixelify Sans';
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    background-color: #2F0E12;
+    color: #AE7467;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+
+    /*Animation to make the start button have a pulse effect
+    when the mouse is hovered over it*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#start:hover {
+    transform: scale(1.08);
+    box-shadow:  0 0 15px #AE7467;
+}
+
+/*Styles apply to element with id "start" and when hover state
+(When the mouse hovers over the start button)*/
