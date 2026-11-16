@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--Browser renders page in standards mode using HTML5-->
+<!--Hypertext Markup Language 5-->
+<html lang = "en">
+    <!--Language is set to English-->
+    <head>
+        <meta charset = "UTF-8"/>
+        <!--Specifies character encoding, A.K.A consistent display across platforms-->
+        <meta http-equiv = "X-UA-Compatible" content = "IE-edge"/>
+        <!--Tells Internet Explorer to use latest rendering engine available-->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+        <!--Ensures that page adapts correctly to different device screen sizes-->
+        <title>Whack-A-David</title>
+        <!--Title of web page, appears on browser title bar/tab-->
+        <link rel = "stylesheet" href = "style.css"/>
+        <!--Links an external CSS file (style.css) to HTML doc, used to style content
+        of the page-->
+    </head>
+    <body>
+        <h1>Whack-A-David</h1>
+        <h2>Score: <span class = "score">0</span></h2>
+        <!--Display score of the game, with score of 0. The score <span> element in
+            the class "score" in CSS or Js file-->
+        <button id = "start" onClick = "startGame()">Start</button>
+        <!--Button element used to start game, id of "start" and an onClick event
+        handler that calls the JavaScript function startGame() when clicked-->
+        <div class ="game">
+            <!--Contains the game elements ("hole", "mole")-->
+            <div class = "hole hole1">
+                <div class = "mole"></div>
+            </div>
+            <div class = "hole hole2">
+                <div class = "mole"></div>
+            </div>
+            <div class = "hole hole3">
+                <div class = "mole"></div>
+            </div>
+            <div class = "hole hole4">
+                <div class = "mole"></div>
+            </div>
+            <div class = "hole hole5">
+                <div class = "mole"></div>
+            </div>
+            <div class = "hole hole6">
+                <div class = "mole"></div>
+            </div>
+        </div>
+            <script src = "script.js"></script>
+            <!--Links to an external JavaScript file (script.js) to HTML doc,
+            JS code for necessary game interaction and funtionality-->
+    </body>
+</html>
