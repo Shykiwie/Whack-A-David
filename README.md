@@ -16,3 +16,6 @@ Just click the link below and play for yourself!
 [Katherine Kato on CodePen](https://codepen.io/kathykato/pen/bRLvWX)
 
 [Kenny Yip Coding on YouTube](https://youtu.be/ej8SatOj3V4)
+
+## Disclosure
+AI was used through the making of this whack-a-mole inspired game. Microsoft’s Copilot helped assist with the code as the guide from CodePen included code that did not work during testing. AI was not used for the art of Whack-A-David, I created the art myself in Procreate.
